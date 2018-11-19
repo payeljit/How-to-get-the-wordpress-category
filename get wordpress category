@@ -1,0 +1,21 @@
+		<!-- itunes -->
+			<?php $itunes = get_field('itunes_link');?>
+
+			<?php $sticher = get_field('sticher_link');?>
+
+
+			<?php if(in_category('legal-podcast')): ?>
+						<!-- itunes -->
+						<?php if($itunes): ?>
+								<a href="<?php echo $itunes?>" target="_blank">Itunes</a>
+						<?php else: ?>
+								<a href="https://itunes.apple.com/us/podcast/wedlake-bell-legal-podcast/id1438540741" target="_blank">Itunes</a>
+						<?php  endif; ?>
+						<!-- sticher -->
+						<?php if($sticher): ?>
+								<a href="<?php echo $sticher?>" target="_blank">Sticher</a>
+						<?php else: ?>
+								<a href="https://www.stitcher.com/podcast/wedlake-bell-legal-podcast" target="_blank">Sticher</a>
+						<?php  endif; ?>
+
+				<?php endif;?>
